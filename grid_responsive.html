@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.min.css" rel="stylesheet">
+    <style>
+        .font_style1{
+            color:rgb(126, 167, 126);
+            font-weight: 300;
+        }
+        .font_style2{
+            color:rgb(41, 214, 156);
+            font-size:medium;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <v-app-bar app flat color="accent">
+                <v-toolbar-title class="white-text mx-auto">GGIO2 민트 다잉 셔켓</v-toolbar-title>
+            </v-app-bar>
+            <v-content>
+                <v-container>
+                    <v-row>
+                        <!--첫 번쨰 열의 반응형 크기를 지정
+                        1) xs의 경우: 열 12개를 사용하여 한 행을 모두 차지
+                        2) sm의 경우: 열 6개를 사용하여 너비의 절반을 차지
+                        -->
+                        <v-col cols="12" sm="6">
+                            <h2 class="mb-3">About Product</h2>
+                            <p class="font_style1">슬립온 셔츠는 여유 있는 실루엣의 기후 변화에 따라 쉽게 입고 벗을 수 있는 스타일로
+                                이너위에 레이어링 하여 코디할 수 있는 실용적인 아이템 입니다.
+                            </p>
+                            <v-img src="https://images.kolonmall.com/Prod_Img/GO/2021/LM15/AXSAS21611MIX_LM15.jpg"></v-img>
+                        </v-col>
+                        <v-col cols="12" sm="6">
+                            <h2 class="mb-3">SLIP-ON SHIRTS</h2>
+                            <p class="font_style2">1. 부분적으로 바랜듯한 내추럴한 컬러감을 더해준
+                                Garment Dyed 기법으로 빈티지한 남성 셔켓</p>
+                            <p class="font_style2">2. 래귤러 칼라 디자인에 버튼 여밈으로 단정함</p>
+                            <p class="font_style2">3. 가슴판의 2 플랩 포켓으로 디테일 및 수납성을 보여줌</p>
+                            <p class="font_style2">4. 소매단의 2 버튼 디테일로 실루엣 조절이 가능함</p>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-content>
+            <v-footer color="primary" dark>
+                <div class="mx-auto">Copyright &copy;{{new Date().getFullYear()}}</div>
+            </v-footer>
+        </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify()
+        })
+    </script>
+</body>
+</html>
